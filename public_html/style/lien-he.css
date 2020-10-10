@@ -1,0 +1,75 @@
+.lien-he {
+    color: pink;
+}
+
+
+form {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    background-color: #EEEAE1;
+    padding-bottom: 49px;
+}
+
+form>div {
+    margin-top: 10px;
+}
+
+form>div:nth-child(1), form>div:nth-child(2) {
+
+    float: left;
+}
+
+
+form>div:nth-child(1) {
+    margin-right: 50px;
+}
+
+
+
+
+form>div:nth-child(3) {
+    clear: both;
+
+
+}
+
+form>div:nth-child(3) textarea {
+    width: 724px;
+    height: 10em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #E8E4DB ;
+}
+
+
+form input {
+    width: 335px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px dashed gray;
+    background-color: #E8E4DB ;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+}
+
+
+form>div:nth-child(4) {
+    text-align: right;
+} 
+
+form input[type="submit"] {
+    width: 100px;
+    text-align: center;
+    margin-right: 11px;
+}
+
+
+.bat-buoc {
+    color: red;
+}
+

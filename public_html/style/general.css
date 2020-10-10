@@ -1,0 +1,163 @@
+/*dinh dang chung cho toan bo trang*/
+* {
+    margin:0;
+    padding: 0; 
+}
+
+a {text-decoration: none;}
+
+body {
+    width: 1000px;
+    height: auto;
+    margin:0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #328233  ;
+
+    /*grid setting*/
+    display:grid;
+    grid-gap: 2px;
+    grid-template: 100px 40px 500px 50px / 25% 75%;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "aside section"
+        "footer footer"
+
+}
+
+
+
+
+
+header {
+    grid-area: header;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+}
+
+
+nav {
+    grid-area: nav;
+    background-color: #609E51 ;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+
+    align-items: center;
+
+
+}
+
+nav ul li {
+    border-right: 1px solid yellow;
+    flex-basis: 166px;
+}
+
+
+nav li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.05em;
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aside {
+    grid-area: aside;
+    background-color:  #F3F8E5;
+}
+
+aside ul {
+    font-weight: bold;
+}
+
+aside ul li a {
+    text-decoration: none;
+}
+
+aside ul li {
+    margin-left: 10px;
+    list-style-position: inside;
+    padding: 7px 0;
+    border-bottom: 1px dashed silver;
+}
+
+aside ul li:first-child {
+    list-style-type: none;
+    text-align: center;
+    padding: 14px;
+    background-color: #DAF3A8;
+    margin: 0;
+    font-size: 1.25em;
+}
+
+
+aside ul li a:link {
+    color: #328233;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+    grid-area: section;
+}
+
+
+footer {
+    grid-area: footer;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: #609E51;
+    padding: 10px;
+}
+
+
+
+
